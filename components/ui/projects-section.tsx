@@ -92,7 +92,7 @@ const ProjectsSection: FC = () => {
           className="text-3xl sm:text-5xl font-bold inline-block bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent"
           {...fadeInUp}
         >
-          Projects I've Worked On
+          Projects I&apos;ve Worked On
         </motion.h2>
         <motion.div
           className="h-1 w-20 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mx-auto mt-4"
@@ -105,7 +105,7 @@ const ProjectsSection: FC = () => {
           {...fadeInUp}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          A collection of personal and professional projects I've developed,
+          A collection of personal and professional projects I&apos;ve developed,
           from open-source libraries to full-stack applications
         </motion.p>
       </motion.div>

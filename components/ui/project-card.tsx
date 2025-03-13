@@ -17,7 +17,6 @@ const ProjectCard: FC<ProjectCardProps> = ({
   tags,
   projectUrl,
   imageUrl,
-  index,
   year,
 }) => {
   return (

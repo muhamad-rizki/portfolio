@@ -1,14 +1,12 @@
 "use client";
 
+import { useActiveSection } from "@/hooks/use-active-section";
+import Logo from "@/public/logo-rizki.svg";
+import { motion } from "framer-motion";
+import { Code, Layout, User } from "lucide-react";
 import { FC } from "react";
-import Image from "next/image";
 import NavLink from "./nav-link";
 import { ThemeToggle } from "./theme-toggle";
-import { useActiveSection } from "@/hooks/use-active-section";
-import { motion } from "framer-motion";
-import { Code, User, Layout } from "lucide-react";
-import { cn } from "@/lib/utils";
-import Logo from "@/public/logo-rizki.svg";
 
 const TopNavigation: FC = () => {
   const activeSection = useActiveSection();
@@ -38,8 +36,8 @@ const TopNavigation: FC = () => {
         <div className="relative py-3 max-w-6xl mx-auto">
           <div className="absolute inset-0" />
           <div className="relative flex items-center justify-between">
-            <motion.a 
-              href="#" 
+            <motion.a
+              href="#"
               className="flex items-center gap-2"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}

@@ -188,7 +188,7 @@ const AboutSection: FC = () => {
               Software Engineer and proud father
             </span>
             , I bring both technical expertise and a nurturing perspective to my
-            work. Since 2017, I've been crafting web and mobile applications
+            work. Since 2017, I&apos;ve been crafting web and mobile applications
             while balancing the joys of parenthood. My journey includes earning
             a{" "}
             <span className="font-medium text-foreground">
@@ -745,7 +745,7 @@ const AboutSection: FC = () => {
         </svg>
         <p className="text-xl italic text-muted-foreground">
           I believe the best digital solutions come from combining technical
-          excellence with empathy and understanding - values I've learned both
+          excellence with empathy and understanding - values I&apos;ve learned both
           as a developer and as a father.
         </p>
         <div className="mt-4 font-semibold">Muhamad Rizki</div>

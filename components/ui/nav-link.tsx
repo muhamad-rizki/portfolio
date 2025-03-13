@@ -1,8 +1,8 @@
 "use client";
 
-import { FC } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
+import { FC } from "react";
 
 interface NavLinkProps {
   href: string;
@@ -15,7 +15,7 @@ const NavLink: FC<NavLinkProps> = ({ href, active, children, label }) => {
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
     const element = document.querySelector(href);
-    element?.scrollIntoView({ behavior: 'smooth' });
+    element?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -31,7 +31,7 @@ const NavLink: FC<NavLinkProps> = ({ href, active, children, label }) => {
     >
       <span className="order-1">{children}</span>
       <span className="font-medium order-2 hidden md:block">{label}</span>
-      
+
       {active && (
         <motion.div
           className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"

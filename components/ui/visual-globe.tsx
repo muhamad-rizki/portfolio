@@ -1,15 +1,15 @@
 "use client";
 
-import { FC } from "react";
+import ProfileImg from "@/public/profile.png";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import ProfileImg from "@/public/profile.png";
+import { FC } from "react";
 
 interface VisualGlobeProps {
   className?: string;
 }
 
-const VisualGlobe: FC<VisualGlobeProps> = ({ className }) => {
+const VisualGlobe: FC<VisualGlobeProps> = () => {
   return (
     <div className="relative w-full h-full">
       {/* Background blur gradient */}
