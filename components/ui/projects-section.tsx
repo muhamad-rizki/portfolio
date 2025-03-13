@@ -81,8 +81,6 @@ const ProjectsSection: FC = () => {
       id="projects"
       className="py-24 w-full max-w-6xl mx-auto px-4 min-h-screen relative flex flex-col justify-center"
     >
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-purple-500/5 to-blue-500/5 rounded-3xl blur-3xl" />
-
       {/* Section Title */}
       <motion.div
         className="text-center mb-16"

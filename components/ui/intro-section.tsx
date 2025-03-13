@@ -32,7 +32,7 @@ const IntroSection: FC = () => {
           animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
           transition={{ duration: 0.5 }}
         >
-          <TypedBanner text="Hello, I'm Muhamad Rizki" />
+          <TypedBanner text="Hello, I'm Rizki" />
 
           <motion.h1
             className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-tight"

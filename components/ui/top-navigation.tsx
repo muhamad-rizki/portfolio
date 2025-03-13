@@ -34,15 +34,20 @@ const TopNavigation: FC = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
     >
-      <div className="relative w-full px-4 bg-background/80 backdrop-blur-sm">
-        <div className="relative py-4 max-w-6xl mx-auto">
+      <div className="relative w-full px-4 bg-background/50 backdrop-blur-sm border-b border-border/50">
+        <div className="relative py-3 max-w-6xl mx-auto">
           <div className="absolute inset-0" />
           <div className="relative flex items-center justify-between">
-            <a href="#" className="flex items-center gap-2">
+            <motion.a 
+              href="#" 
+              className="flex items-center gap-2"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.2 }}
+            >
               <Logo className="w-8 h-8 fill-gray-600 dark:fill-white" />
-            </a>
+            </motion.a>
 
-            <div className="flex items-center justify-center gap-8">
+            <div className="flex items-center justify-center gap-6">
               {navItems.map(({ href, label, icon }) => (
                 <NavLink
                   key={href}
