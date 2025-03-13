@@ -27,7 +27,7 @@ const SocialLinks: FC<SocialLinksProps> = ({ className }) => {
           <path d="M9 18c-4.51 2-5-2-7-2" />
         </svg>
       ),
-      url: "https://github.com/username",
+      url: "https://github.com/muhamad-rizki",
     },
     {
       name: "LinkedIn",
@@ -48,7 +48,7 @@ const SocialLinks: FC<SocialLinksProps> = ({ className }) => {
           <circle cx="4" cy="4" r="2" />
         </svg>
       ),
-      url: "https://linkedin.com/in/username",
+      url: "https://linkedin.com/in/its-rizki",
     },
     {
       name: "Twitter",
@@ -64,10 +64,11 @@ const SocialLinks: FC<SocialLinksProps> = ({ className }) => {
           strokeLinecap="round"
           strokeLinejoin="round"
         >
-          <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+          <rect width="20" height="16" x="2" y="4" rx="2" />
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
         </svg>
       ),
-      url: "https://twitter.com/username",
+      url: "mailto:contact@rizki.work",
     },
   ];
 

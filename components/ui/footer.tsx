@@ -32,7 +32,7 @@ const Footer: FC = () => {
           >
             {[
               {
-                href: "https://github.com/vesselsoft",
+                href: "https://github.com/muhamad-rizki",
                 label: "GitHub",
               },
               {
