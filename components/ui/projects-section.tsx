@@ -114,7 +114,7 @@ const ProjectsSection: FC = () => {
 
       {/* Projects Masonry Grid */}
       <div className="columns-1 md:columns-2 lg:columns-3 gap-6 relative">
-        {projects.map((project, index) => (
+        {projects.sort((a, b) => b.year - a.year).map((project, index) => (
           <motion.div
             key={project.title}
             initial={{ opacity: 0, y: 20 }}

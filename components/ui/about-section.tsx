@@ -6,6 +6,7 @@ import { motion, useInView } from "framer-motion";
 import SkillBadge from "./skill-badge";
 import FloatingBadge from "./floating-badge";
 import GitHubContributions from "./github-contributions";
+import aboutImg from "@/public/about.png";
 
 // Create a categorized skills object for better organization
 const skillCategories = [
@@ -350,25 +351,24 @@ const AboutSection: FC = () => {
         </motion.div>
 
         <motion.div
-          className="relative h-[450px] order-1 lg:order-2"
+          className="relative h-[550px] order-1 lg:order-2"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={
             isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }
           }
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-xl blur-xl" />
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-xl blur-xl" />
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="relative w-full h-full p-8">
-              <div className="absolute inset-0 bg-gradient-to-br from-background/80 to-background/30 backdrop-blur-sm rounded-xl border border-border" />
+            <div className="relative w-full h-full">
 
-              <div className="relative h-full w-full flex items-center justify-center">
+              <div className="relative h-full w-full flex items-center justify-center rounded-xl overflow-hidden">
                 <Image
-                  src="/window.svg"
+                  src={aboutImg}
                   alt="Development"
-                  width={300}
-                  height={300}
-                  className="object-contain"
+                  width={400}
+                  height={400}
+                  className="object-containf w-full h-full object-center"
                 />
               </div>
 
@@ -423,7 +423,7 @@ const AboutSection: FC = () => {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <span className="text-sm font-medium">Fast Learner</span>
+                <span className="text-sm font-medium">Problem Solver</span>
               </FloatingBadge>
 
               <FloatingBadge className="top-20 -left-4 rotate-[-6deg]">
